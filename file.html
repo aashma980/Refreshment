@@ -1,0 +1,599 @@
+
+<!Doctype html>
+<html>
+
+<head>
+
+    <script src="https://kit.fontawesome.com/49d51e8a80.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-container {
+            background-image: url(hero1.jpg);
+            background-size: cover;
+            height: 100vh;
+            min-height: 700px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            font-style: italic;
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 1;
+            font-family: "Playfair+Display", times, serif;
+            display: flex;
+            justify-content: left;
+        }
+
+        .Introduction {
+            padding-top: 10%;
+        }
+
+        .Introduction h1 {
+            text-align: center;
+            font-family: "Playfair+Display", times, serif;
+            color: #fff;
+            font-weight: bold;
+            font-size: 70px;
+            margin-top: 100px;
+            margin-bottom: 5px;
+
+        }
+
+        .Introduction p {
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+
+        }
+
+        .button {
+            color: #fff;
+            background-color: #e61c5d;
+            border-color: #e61c5d;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: .2em;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .button1 {
+            color: #fff;
+
+            border: 1px solid #fff;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: .2em;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .em {
+            font-style: italic;
+        }
+
+        .flex-container1 h2 {
+            margin-left: 10%;
+            justify-content: left;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-family: "Mukta Mahee", arial, sans-serif;
+            color: #b3b3b3;
+            letter-spacing: .2em;
+            margin-bottom: 30px;
+
+        }
+
+        .flex-container1 {
+
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .visit {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .star {
+            justify-content: right;
+            color: #adb5bd;
+            font-style: italic;
+            float: right;
+        }
+
+        .review-star {
+            font-size: 15px;
+            color: #e61c5d;
+        }
+
+        .rating {
+            color: #adb5bd;
+            font-style: italic;
+        }
+
+        div.gallery {
+            margin: 10px;
+            width: 250px;
+        }
+
+        div.gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+
+            text-align: left;
+        }
+
+        .desc h3 {
+            color: #000;
+            font-family: "Playfair+Display", times, serif;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+        }
+
+        .flex-container2 p {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            font-family: "Mukta Mahee", arial, sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        .collection {
+            display: flex;
+            justify-content: center;
+            padding-top: 8%;
+            padding-bottom: 10px;
+        }
+
+        .flex-container3 h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+        }
+
+        .flex-container3 p {
+            display: flex;
+            justify-content: center;
+            font-family: "Mukta Mahee", arial, sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #6c757d;
+        }
+
+        .flex-container3 {
+            background-image: url(background.jpg);
+            padding-top: 12%;
+            padding-bottom: 10%;
+
+        }
+
+        .flex-container4 {
+            display: flex;
+            justify-content: center;
+            background-image: url(background.jpg);
+
+
+        }
+
+        div.gallery1 {
+            margin: 10px;
+            width: 20%;
+
+        }
+
+        div.gallery1 img {
+            width: 80%;
+            height: 100%;
+        }
+
+        div.desc1 {
+            padding: 15px 30px;
+            text-align: left;
+        }
+
+        .desc1 h3 {
+            color: #ced4da;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+        }
+
+        .desc1 p {
+            font-size: 22px;
+            color: #000;
+            font-family: "Playfair+Display", times, serif;
+        }
+
+
+        .opinion h2 {
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+            width: 70px;
+        }
+
+        .testimonials {
+            line-height: 1.5;
+            font-family: "Playfair+Display", times, serif;
+            font-size: 20px;
+            color: #000;
+            font-style: italic;
+        }
+
+        .opinion {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-container5 {
+            justify-content: center;
+            padding-top: 25%;
+            padding-bottom: 10%;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1a1a1a;
+            color: rgba(255, 255, 255, 0.7);
+            padding-top: 10%;
+
+        }
+
+        .block {
+            font-style: italic;
+            color: #fff;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5%;
+            background-color: #1a1a1a;
+            color: rgba(255, 255, 255, 0.7);
+
+        }
+
+        .icon {
+            display: flex;
+            justify-content: right;
+
+        }
+
+        .icon .fa-brands {
+            margin: 10px;
+            font-size: 30px;
+
+
+        }
+
+        .list p {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0;
+            color: #fff;
+            height: 50px;
+            outline: none;
+        }
+
+        .btn {
+            outline: none;
+            background: none;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="logo">
+            <h1>Villa</h1>
+        </div>
+
+        <div class="Introduction">
+            <h1>Welcome to <em>Villa</em> resort</h1>
+            <p>Discover our world-class hotel & restaurant resort.</p>
+            <button class="button">Explore the beauty</button>
+            <button class="button1">Download</button>
+        </div>
+    </div>
+    <div class="flex-container1">
+        <h2>You can visit</h2>
+        <div class="visit">
+
+            <div class="gallery">
+                <a target="_blank" href="food.jpg">
+                    <img src="food.jpg" alt="Cinque Terre">
+                </a>
+                <div class="desc">
+                    <h3> Food & Wines</h3>
+                    <div>
+                        <div class="review-star float-left">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p class="star"> 3,239 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="resort.jpg">
+                    <img src="resort.jpg" alt="Forest">
+                </a>
+                <div class="desc">
+                    <h3> Food & Wines</h3>
+                    <div>
+                        <div class="review-star float-left">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p class="star"> 4,929 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="gallery">
+                <a target="_blank" href="hotel.jpg">
+                    <img src="hotel.jpg" alt="Northern Lights">
+                </a>
+                <div class="desc">
+                    <h3> Food & Wines</h3>
+                    <div>
+                        <div class="review-star float-left">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p class="star"> 2,112 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gallery">
+                <a target="_blank" href="yacht.jpg">
+                    <img src="yacht.jpg" alt="Mountains">
+                </a>
+                <div class="desc">
+                    <h3> Food & Wines</h3>
+                    <div>
+                        <div class="review-star float-left">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p class="star"> 6,421 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container2">
+        <h2>A gorgeous place to<h2>
+                <h2>enjoy your life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque quo
+                odio repudiandae sunt eveniet? Enim facilis laborum voluptate id porro, culpa maiores
+                quis, blanditiis laboriosas alias. Sed </p>
+    </div>
+    <div class="collection">
+        <img src="room.jpg" alt="feel home">
+    </div>
+    <div class="flex-container3">
+        <h2>Recent Blog Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, iusto doloremque quo</p>
+        <p>odio repudiandae sunt eveniet? Enim facilis laborum voluptate id porro, culpa maiores </p>
+        <p>quis, blanditiis laboriosas alias. Sed </p>
+    </div>
+    <div class="flex-container4">
+        <div class="gallery1">
+            <a target="_blank" href="wine.jpg">
+                <img src="wine.jpg" alt="Cinque Terre">
+            </a>
+            <div class="desc1">
+                <h3>FEBRUARY 26,2018</h3>
+                <p>Five Reasons to Stay at</p>
+                <p>Villa Resort</p>
+
+            </div>
+        </div>
+        <div class="gallery1">
+            <a target="_blank" href="pool.jpg">
+                <img src="pool.jpg" alt="Cinque Terre">
+            </a>
+            <div class="desc1">
+                <h3>FEBRUARY 26,2018</h3>
+                <p>Five Reasons to Stay at</p>
+                <p>Villa Resort</p>
+            </div>
+        </div>
+
+        <div class="gallery1">
+            <a target="_blank" href="view.jpg">
+                <img src="view.jpg" alt="Cinque Terre">
+            </a>
+            <div class="desc1">
+                <h3>FEBRUARY 26,2018</h3>
+                <p>Five Reasons to Stay at</p>
+                <p>Villa Resort</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container5">
+        <h2>Testimonials</h2>
+        <div class="opinion">
+
+            <div class="testimonials">
+                <img src="jean.jpg" alt="jean" class="rounded-circle">
+                <p>“Et quidem, impedit eum</p>
+                <p>fugiat excepturi iste</p>
+                <p>aliquid suscipit, tempore,</p>
+                <p>delectus rem soluta</p>
+                <p>voluptatem distinctio sed</p>
+                <p>dolores, magni fugit nemo</p>
+                <p>cum expedita. Totam a </p>
+                <p>sunt aut autem placeat officia.”</p>
+                <p><em style="color: #6c757d;">-Jean Smith</em></p>
+            </div>
+            <div class="testimonials">
+                <img src="john.jpg" alt="john" class="rounded-circle">
+                <p>“Lorem ipsum dolor sit</p>
+                <p>amet, consectetur</p>
+                <p>adipisicing elit.</p>
+                <p>In dolor, iusto doloremque</p>
+                <p>quo odio repudiandae sunt</p>
+                <p>eveniet? Enim facilis</p>
+                <p>laborum voluptate id</p>
+                <p>porro, culpa maiores</p>
+                <p>quis, blanditiis</p>
+                <p>laboriosam alias”
+                <p>
+                <p><em style="color: #6c757d;">-John Doe</em></p>
+            </div>
+            <div class="testimonials">
+                <img src="doe.jpg" alt="doe" class="rounded-circle">
+                <p>“Nostrum, alias,</p>
+                <p>provident magnam sit</p>
+                <p>blanditiis laboriosam</p>
+                <p>unde quaerat, at ipsam,</p>
+                <p>ratione maiores saepe</p>
+                <p>nisi modi corporis quas!</p>
+                <p>Beatae quam, quod</p>
+                <p>aspernatur debitis</p>
+                <p>nesciunt quasi porro ea</p>
+                <p>iste nobis aliquid</p>
+                <p>perspiciatis nostrum</p>
+                <p>culpa impedit aut, iure</p>
+                <p>blanditiis itaque similique</p>
+                <p>sunt!”</p>
+                <p><em style="color: #6c757d;">-John Doe</em></p>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div>
+            <p>About Us</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Help</p>
+            <p>Rooms</p>
+        </div>
+        <div>
+            <p>Our Locations</p>
+            <p>The Hosts</p>
+            <p>About</p>
+            <p>Contact</p>
+            <p>Restaurant</p>
+        </div>
+        <div>
+            <span class="block">Address:</span>
+            <p>98 West 21th Street, Suite 721 New</p>
+            <p>York NY 10016</p>
+            <span class="block">Phone:</span>
+            <p>(+1) 435 3533</p>
+            <span class="block">Email:</span>
+            <p>info@yourdomain.com</p>
+        </div>
+        <div>
+            <p>Sign up for our newsletter</p>
+            <input type="email" class="form-control" placeholder="Your email.....">
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by
+            Colorlib</p>
+        <p class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </p>
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
